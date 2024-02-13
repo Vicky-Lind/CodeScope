@@ -1,0 +1,9 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="url">Enter a URL:</label><br>
+    <input type="text" id="url" name="url"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+    <h2>Results:</h2>
+    <p>{{ url }}</p>
